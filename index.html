@@ -5,6 +5,7 @@
     <title>title</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="URI.js"></script>
 </head>
 <body>
     <div style="width: 60%">
@@ -408,12 +409,21 @@
         </div>
       </div>
       <div style="position: absolute; left:65%; width:35%; top:0">
-        <input class = "name-input"></input>
-        <button class = "guess-button">guess</button>
-        <br>
+        <div class = "remaining-guesses-div" style="display: none"><span>remaining guesses: </span><span class = "remaining-guesses"></span></div>
         <button class = "give-up-button">give up</button>
         <br>
         <p class = "give-up-text"></p>
+        <br>
+        <input class = "name-input"></input>
+        <button class = "guess-button">guess</button>
+        <br>
+        
+      </div>
+      <div style="position: absolute; left: 90%; width: 10%; top:0; text-align: right; z-index: 1;">
+        <svg class ="menu-button" width="55" height="55" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </div>
+      <div class="menu" style="position: absolute; left:65%; width:35%; top: 0; height: 100%; background: white; display: none">
+      <a href = "challenge.html">create challenge link</a>
       </div>
 </body>
 <script src="possible_ids.js"></script>
